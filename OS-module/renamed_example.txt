@@ -1,0 +1,12 @@
+Kubernetes is a powerful platform for managing containerized applications, but its architecture can seem complex. In this article, I’ll provide a simple overview of Kubernete’s key components.
+
+Cluster 🗂️: The overall Kubernetes environment, managing applications across nodes.
+Node ⚙️: A machine (Master or Worker) in the cluster that runs workloads.
+Pod 📦: The smallest deployable unit, containing one or more containers, running on a node.
+Service 🌐: Provides stable access to pods, with load balancing.
+Namespace 🗃️: Logical partition to organize resources within the cluster.
+API Server 🚏: Handles requests to the cluster.
+etcd 📚: Stores all cluster data.
+Scheduler 📅: Assigns pods to nodes.
+Kubelet 👨‍💻: Manages pod lifecycle on each node.
+Kube Proxy 🔌: Manages network communication for services.
