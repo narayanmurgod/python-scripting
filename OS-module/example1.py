@@ -1,39 +1,13 @@
-import os
+import decimal  #import decimal: This imports the entire decimal module, which means you can use any functionality provided by the module by prefixing it with decimal.
+#import decimal
+#d = decimal.Decimal('3.14')
 
-# Get the current working directory
-current_directory = os.getcwd()
-print("Current working directory:", current_directory)
+from decimal import Decimal #from decimal import Decimal: This imports the Decimal class directly from the decimal module, allowing you to use Decimal without the module prefix. This can make your code cleaner and more readable. For example:
+#from decimal import Decimal
+#d = Decimal('3.14')
 
-# Create a new directory
-new_directory = "my_new_directory"
-os.makedirs(new_directory, exist_ok=True)
-print(f"Created directory: {new_directory}")
 
-# List files in the current directory
-files = os.listdir()
-print("Files in the current directory:", files)
+v1=Decimal(4.5)
+v2=Decimal(8.9)
 
-# Get the size of a file
-file_path = "my_file.txt"
-if os.path.exists(file_path):
-    file_size = os.path.getsize(file_path)
-    print(f"Size of {file_path}: {file_size} bytes")
-else:
-    print(f"File {file_path} does not exist.")
-
-# Rename a file
-old_name = "my_file.txt"
-new_name = "renamed_file.txt"
-if os.path.exists(old_name):
-    os.rename(old_name, new_name)
-    print(f"Renamed {old_name} to {new_name}")
-else:
-    print(f"File {old_name} does not exist.")
-
-# Delete a file
-file_to_delete = "renamed_file.txt"
-if os.path.exists(file_to_delete):
-    os.remove(file_to_delete)
-    print(f"Deleted {file_to_delete}")
-else:
-    print(f"File {file_to_delete} does not exist.")
+print(v1+v2)
