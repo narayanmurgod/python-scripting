@@ -1,4 +1,7 @@
-You can use the Python subprocess module to create new processes, connect to their input and output, and retrieve their return codes and/or output of the process.
+You can use the Python subprocess module to create new processes, 
+connect to their input and output, and retrieve their return codes 
+and/or output of the process.
 
 *What is Python Subprocess*
-The Python subprocess module is a tool that allows you to run other programs or commands from your Python code. It can be used to open new programs, send them data and get results back.
+The Python subprocess module is a tool that allows you to run other programs or commands from your Python code. 
+It can be used to open new programs, send them data and get results back.
